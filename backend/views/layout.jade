@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+  script(src='/javascripts/socket.io.js')
+  script.
+    var socket = io('http://localhost:3001');
+    console.log(socket.id);
+    socket.on('connect', function() {
+      console.log(socket.id);
+    });
+    socket.on('event', function (data) {
+      console.log(data);
+    });

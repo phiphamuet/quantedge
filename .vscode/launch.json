@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "webRoot": "${workspaceRoot}/public/index.html"
+        }
+    ]
+}
+// {
+//     "version": "0.1.0",
+//     "configurations": [
+//         {
+//             "name": "Launch localhost",
+//             "type": "chrome",
+//             "request": "launch",
+//             "url": "http://localhost/mypage.html",
+//             "webRoot": "${workspaceRoot}/app/files"
+//         },
+//         {
+//             "name": "Launch index.html (disable sourcemaps)",
+//             "type": "chrome",
+//             "request": "launch",
+//             "sourceMaps": false,
+//             "file": "${workspaceRoot}/index.html"
+//         },
+//     ]
+// }

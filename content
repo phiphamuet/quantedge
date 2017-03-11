@@ -1,0 +1,14 @@
+- Company
+    - Code
+    - Name
+    - Price
+        - Volume: Double[0.01 - 99.99] (toFixed(2))
+        - Frequency : 5s
+        - Change: min/max -/+ 5%
+    - Volume
+        - Volume: Integer[1000 - 1000000]
+        - Frequency: 5s
+        - Change: min/max [10-30]
+    - Value = Volume * Price
+    - Changed
+    - Changed (%)
